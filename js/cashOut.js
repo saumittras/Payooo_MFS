@@ -12,7 +12,12 @@ document
     console.log(cashOutAmount, cashOutPinNumber);
     if (cashOutPinNumber === "1234") {
       const newBlance = parseFloat(currentBlance) - cashOutAmount;
-      console.log(newBlance);
+      alert(
+        "You cash out " +
+          cashOutAmount +
+          " taka! your new balance is " +
+          newBlance
+      );
       document.getElementById("total-amount").innerText = newBlance;
     } else {
       alert("Worng Pin Number!");
