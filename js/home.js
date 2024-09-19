@@ -9,7 +9,7 @@ document
     const pinNumber = document.getElementById("pin-number").value;
     const totalAmount = document.getElementById("total-amount").innerText;
     if (pinNumber === "1234") {
-      let newAmount = parseInt(addMoneyInput) + parseInt(totalAmount);
+      let newAmount = parseFloat(addMoneyInput) + parseFloat(totalAmount);
       document.getElementById("total-amount").innerText = newAmount;
     } else {
       alert("Faild to add money! Try again");

@@ -11,8 +11,10 @@ document
     console.log(currentBlance);
     console.log(cashOutAmount, cashOutPinNumber);
     if (cashOutPinNumber === "1234") {
-      const newBlance = parseInt(currentBlance) - cashOutAmount;
+      const newBlance = parseFloat(currentBlance) - cashOutAmount;
       console.log(newBlance);
       document.getElementById("total-amount").innerText = newBlance;
+    } else {
+      alert("Worng Pin Number!");
     }
   });
