@@ -31,7 +31,7 @@ document
     const pinNumber = document.getElementById("pin-number").value;
     if (phoneNumber === "6" && pinNumber === "1234") {
       console.log("You are loged in");
-      window.location.href = "./home.js";
+      window.location.href = "/home.html";
     } else {
       alert(" wrong Mobile and Pin Number");
     }
